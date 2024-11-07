@@ -1,16 +1,17 @@
-// Sample Input:
 
-//countWordOccurrences("TypeScript is great. I love TypeScript!", "typescript");
 
-// Sample Output:
-// 2;
+const countWordOccurrences = (sentence: string, word: string) => {
+    const stringArr = sentence.toLowerCase().split(' ');
+    const convertedWord = word.toLowerCase();
 
-// const countWordOccurrences = (sentence: string, word: string) => {
-//     const stringArr = sentence.toLowerCase();
-//     const stringNum = stringArr.split(word.toLowerCase())
-//     console.log(stringNum)
-//     return stringNum.length - 1;
+    let count = 0;
+    
+    for (const w of stringArr) {
+        if (w === convertedWord) {
+            count++;
+        }
+    }
 
-// }
+    return count;
 
-// console.log(countWordOccurrences('TypeScript is great. I love TypeScript!', 'Type'))
+}
