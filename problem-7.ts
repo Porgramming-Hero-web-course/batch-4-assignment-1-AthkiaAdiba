@@ -15,6 +15,3 @@ class Car {
         return currentYear - this.year;
     }
 }
-
-const car = new Car("Honda", "Civic", 2024);
-console.log(car.getCarAge());
