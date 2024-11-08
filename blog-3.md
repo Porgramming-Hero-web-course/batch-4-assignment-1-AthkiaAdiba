@@ -33,7 +33,6 @@ printLength(42); // Output: The number is: 42
 ```
 
 **Use Case**: When you need to check whether a variable is of a primitive type like `string`, `number`, or `boolean`.
-
 </br>
 </br>
 
@@ -71,7 +70,6 @@ makeSound(dog); // Output: Woof!
 makeSound(cat); // Output: Meow!
 ```
 **Use Case**: Use `instanceof` to verify if an object is a particular class instance, making it suitable for distinguishing between multiple classes in object-oriented programming.
-
 </br>
 </br>
 
@@ -105,7 +103,6 @@ function handleAnimal(animal: Cat | Dog) {
 }
 ```
 **Use Case**: Custom Type Guards are powerful when handling complex types. This approach is flexible and allows for intricate type-checking logic.
-
 </br>
 </br>
 
@@ -136,7 +133,6 @@ function moveAnimal(animal: Bird | Fish) {
 ```
 
 **Use Case:** The `in` operator is great for distinguishing between objects with unique properties, even if they share similar attributes, making it useful for differentiating between various types of objects.
-
 </br>
 </br>
 
@@ -164,7 +160,6 @@ function greet(entity: Animal | Human) {
 ```
 
 **Use Case:** This approach helps to safely interact with properties or methods unique to specific types in unions, ensuring only the relevant parts of each type are accessed.
-
 </br>
 </br>
 
